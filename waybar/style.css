@@ -13,3 +13,11 @@
   box-shadow: none;
 }
 
+#custom-updates.up-to-date {
+    color: #00ff7f;
+}
+
+#custom-updates.updates-pending {
+    color: #ffa500;
+    animation: pulse 2s infinite;
+}

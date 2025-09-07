@@ -9,8 +9,8 @@
   ],
   "modules-center": [],
   "modules-right": [
+    "custom/updates",
     "memory",
-    //"cpu",
     "custom/cpuhistory",
     "custom/temperature",
     "backlight",
@@ -20,6 +20,19 @@
     "battery",
     "clock"
   ],
+  "custom/updates": {
+    "exec": "~/.config/waybar/scripts/checkupdates.sh", // # of updates
+    "format": "{icon} {text} ",
+    "format-icons": {
+        "up-to-date": "",
+        "updates-pending": ""
+    },
+    "return-type": "json",
+    "interval": 1800, // Every 30 min
+    "signal": 8,
+    "tooltip": true,
+    "on-click": "pkill -RTMIN+8 waybar"
+  },
   "hyprland/workspaces": {
     "disable-scroll": false,
     "all-outputs": true,
