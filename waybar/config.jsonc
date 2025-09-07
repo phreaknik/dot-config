@@ -10,7 +10,8 @@
   "modules-center": [],
   "modules-right": [
     "memory",
-    "cpu",
+    //"cpu",
+    "custom/cpuhistory",
     "custom/temperature",
     "backlight",
     "pulseaudio",
@@ -93,10 +94,14 @@
     "tooltip": true,
     "tooltip-format": "Current Memory Usage: {used:0.2f}G/{total:0.2f}G"
   },
-  "cpu": {
-    "format": "<span color='#FF9F0A'>  </span>{usage}% ",
-    "format-icons": [" 󰾆", " 󰾅", " 󰓅"],
-    "tooltip": true
+  //"cpu": {
+  //  "format": "<span color='#FF9F0A'>  </span>{usage}% ",
+  //  "tooltip": true
+  //},
+  "custom/cpuhistory": {
+    "exec": "~/.config/waybar/scripts/cpu_history.py",
+    "format": "<span color='#FFA500'>  </span>{}",
+    "interval": 6,
   },
   "clock": {
     "interval": 1,
