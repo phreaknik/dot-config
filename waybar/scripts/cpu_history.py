@@ -102,7 +102,7 @@ def main():
             )
             for i in range(0, history_depth, 2)
         )
-        text = f"[{graph}]"
+        text = f"[{graph}] {current_usage:.1f}%"
     else:
         text = f"{current_usage:.1f}%"
     
