@@ -30,7 +30,7 @@
     "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%"
   },
   "clock": {
-    "format": "{:%H:%M | %e %B} ",
+    "format": "{:%I:%M %p | %e %B} ",
     "format-alt": "{:%Y-%m-%d}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
   },
