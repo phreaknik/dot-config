@@ -1,3 +1,10 @@
+@define-color default-bg rgba(0, 0, 8, 0.85);
+@define-color default-text #c0caf5;
+@define-color hover-bg rgba(26, 27, 38, 0.9);
+@define-color hover-text #cdd6f4;
+@define-color accent #ffa500;
+@define-color archlinuxblue #1793d1;
+
 * {
     /* `otf-font-awesome` and SpaceMono Nerd Font are required to be installed for icons */
     font-family: "Fira Sans Semibold", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
@@ -7,7 +14,7 @@
 
 window#waybar {
     background: transparent;
-    color: #c0caf5;
+    color: @default-text;
     font-family: 
         SpaceMono Nerd Font,
         feather;
@@ -18,17 +25,20 @@ window#waybar {
 .modules-center,
 .modules-right
 {
-    background: rgba(0, 0, 8, .85);
+    background: @default-bg;
 }
+
 .modules-left {
     padding: 0;
     border-bottom-right-radius: 15px;
 }
+
 .modules-center {
     padding: 0 10px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
+
 .modules-right {
     padding: 0;
     border-bottom-left-radius: 15px;
@@ -75,7 +85,7 @@ window#waybar {
 #scratchpad:hover,
 #power-profiles-daemon:hover,
 #mpd:hover {
-    background: rgba(26, 27, 38, 0.9);
+    background: @hover-bg;
 }
 
 #workspaces button {
@@ -85,18 +95,18 @@ window#waybar {
     feather;
   font-weight: 900;
   font-size: 13pt;
-  color: #c0caf5;
+  color: @default-text;
   border:none;
   border-radius: 15px;
 }
 
 #workspaces button.active {
-    color: #ffa500;
+    color: @accent;
 }
 
 #workspaces button:hover {
   background: #11111b;
-  color: #cdd6f4;
+  color: @hover-text;
   box-shadow: none;
 }
 
@@ -106,8 +116,9 @@ window#waybar {
     font-size: 25px;
     transition: color .5s;
 }
+
 #custom-arch:hover {
-    color: #1793d1;
+    color: @archlinuxblue;
 }
 
 #custom-updates.up-to-date {
@@ -120,7 +131,7 @@ window#waybar {
 }
 
 #custom-updates.updates-pending {
-    color: #ffa500;
+    color: @accent;
     animation: pulse 2s infinite;
 }
 
@@ -138,6 +149,6 @@ window#waybar {
 }
 
 #mpris.playing {
-    color: #ffa500;
+    color: @accent;
     animation: breathe 1.5s ease-in-out infinite;
 }
