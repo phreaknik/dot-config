@@ -1,9 +1,9 @@
 #!/usr/bin/env zsh
 
-# If external monitor is connected (HDMI-A-1) allow enable/disable of internal
-# display (eDP-1)
+# If external monitor is connected (HDMI-A-1) toggle the internal display
+# (eDP-1) according to the laptop lid state.
 if [[ "$(hyprctl monitors)" =~ "\sHDMI-A-[0-9]+" ]]; then
-  if [[ $1 == "close" ]]; then
+  if grep -q "closed" /proc/acpi/button/lid/LID0/state 2>/dev/null; then
     hyprctl keyword monitor "eDP-1,disable"
   else
     hyprctl keyword monitor "eDP-1,preferred,preferred,auto"
@@ -12,3 +12,4 @@ if [[ "$(hyprctl monitors)" =~ "\sHDMI-A-[0-9]+" ]]; then
 else
   hyprctl keyword monitor "eDP-1,preferred,preferred,auto"
 fi
+
