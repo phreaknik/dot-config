@@ -5,9 +5,9 @@
 export PATH="$PATH:$(find ~/.local/bin -type d | paste -sd ':' -)"
 
 # Default programs:
-export EDITOR="vim"
-export TERMINAL="alacritty"
-export SHELL="zsh"
+export EDITOR="/usr/bin/vim"
+export TERMINAL="/usr/bin/alacritty"
+export SHELL="/usr/bin/zsh"
 
 # ~/ Clean-up:
 ## XDG base paths
