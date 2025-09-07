@@ -15,7 +15,7 @@
 
 /* Main Window */
 window#waybar {
-    background: transparent;
+    background: @default-bg;
     color: @default-text;
     font-family: SpaceMono Nerd Font, feather;
     transition: background-color .5s;
@@ -25,7 +25,6 @@ window#waybar {
 .modules-left,
 .modules-center,
 .modules-right {
-    background: @default-bg;
     padding: 0;
 }
 
