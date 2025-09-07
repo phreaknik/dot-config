@@ -102,8 +102,8 @@
     "tooltip-format": "{essid}\n{ifname} via {gwaddr} "
   },
   "pulseaudio": {
-    "format": "{icon}  {volume}%",
-    "format-bluetooth": "{icon}  {volume}% ",
+    "format": "{icon}   {volume}%",
+    "format-bluetooth": "{icon}   {volume}% ",
     "format-bluetooth-muted": " {icon}",
     "format-icons": {
       "car": "",
