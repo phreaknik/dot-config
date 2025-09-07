@@ -22,11 +22,23 @@ BRAILLE_PATTERNS = {
 }
 
 def get_braille_char(left_val, right_val):
-    """Convert two percentage values (0-100) to a single Braille character."""
-    # Convert percentages to levels (0-4) with proper rounding
-    # 0-12.5% = 0 dots, 12.5-37.5% = 1 dot, 37.5-62.5% = 2 dots, 62.5-87.5% = 3 dots, 87.5-100% = 4 dots
-    left_level = min(round(left_val / 25), 4)
-    right_level = min(round(right_val / 25), 4)
+    """Convert two percentage values (0-100) to a single Braille character using log scale."""
+    # Logarithmic scale for better battery impact representation:
+    # 0-1% = 0 dots, 1-3% = 1 dot, 3-10% = 2 dots, 10-30% = 3 dots, 30-100% = 4 dots
+    def cpu_to_level(val):
+        if val < 1:
+            return 0
+        elif val < 3:
+            return 1
+        elif val < 10:
+            return 2
+        elif val < 30:
+            return 3
+        else:
+            return 4
+    
+    left_level = cpu_to_level(left_val)
+    right_level = cpu_to_level(right_val)
     return BRAILLE_PATTERNS.get((left_level, right_level), '⠀')
 
 def load_data():
