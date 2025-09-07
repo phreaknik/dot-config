@@ -14,7 +14,7 @@ if [ "$num_updates" -eq 0 ]; then
     echo '{"text": "Up to date!", "alt": "up-to-date", "class": "up-to-date", "tooltip": "System is up to date"}'
 else
     if [ "$num_updates" -eq 1 ]; then
-        text="1"
+        text="1 update"
     else
         text="$num_updates updates"
     fi
