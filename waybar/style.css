@@ -1,0 +1,15 @@
+/* Global settings */
+* {
+  font-family: "CaskaydiaCove Nerd Font", "Font Awesome 6 Free", "Font Awesome 6 Free Solid";
+  font-weight: bold;
+  font-size: 12px;
+  color: #dcdfe1;
+}
+
+/* Transparent Waybar background */
+#waybar {
+  background-color: rgba(0x1f,0x1f,0x23,1);
+  border: none;
+  box-shadow: none;
+}
+
