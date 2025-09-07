@@ -93,7 +93,7 @@ window#waybar {
 }
 
 #workspaces button.active {
-    color: #FED90F;
+    color: #ffa500;
 }
 
 #workspaces button:hover {
