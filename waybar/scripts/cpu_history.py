@@ -114,13 +114,15 @@ def main():
     tooltip_lines = []
     for i, usage in enumerate(per_core):
         if usage >= 80:
-            color = "#ff6b6b"  # Red for high load
+            color = "#ff0000"  # Red for high load
         elif usage >= 60:
-            color = "#feca57"  # Yellow for medium-high load
+            color = "#ff8c00"  # Dark orange for medium-high load
         elif usage >= 40:
-            color = "#48dbfb"  # Cyan for medium load
+            color = "#ffd700"  # Yellow/gold for medium load
         else:
-            color = "#1dd1a1"  # Green for low load
+            # No color for low load - use default shell color
+            tooltip_lines.append(f'Core {i}: {usage:5.1f}%')
+            continue
         
         tooltip_lines.append(f'<span color="{color}">Core {i}: {usage:5.1f}%</span>')
     
