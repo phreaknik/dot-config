@@ -112,6 +112,15 @@ window#waybar {
     color: #1793d1;
 }
 
+#custom-updates.up-to-date {
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+    min-height: 0;
+    font-size: 0;
+}
+
 #custom-updates.updates-pending {
     color: #ffa500;
     animation: pulse 2s infinite;
