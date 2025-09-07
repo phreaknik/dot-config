@@ -68,6 +68,9 @@
       "default": "",
       "urgent": ""
     },
+    "persistent-workspaces": {
+      "*":[1,2,3,4]
+    },
     "warp-on-scroll": false
   },
   "idle_inhibitor": {
