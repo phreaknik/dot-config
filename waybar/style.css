@@ -5,6 +5,7 @@
 @define-color accent #ffa500;
 @define-color archlinuxblue #1793d1;
 @define-color workspace-hover #11111b;
+@define-color error #ff4040;
 
 /* Global Styles */
 * {
@@ -102,6 +103,14 @@ window#waybar {
 #custom-updates.updates-pending {
     color: @accent;
     animation: pulse 2s infinite;
+}
+
+#network.linked {
+    color: @accent;
+}
+
+#network.disconnected {
+    color: @error;
 }
 
 #mpris.playing {

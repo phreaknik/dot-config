@@ -94,12 +94,12 @@
 	  // "ignored-players": ["firefox"]
   },
   "network": {
-    "format-disconnected": "Disconnected ⚠",
-    "format-ethernet": "{ipaddr}/{cidr} ",
-    "format-linked": "{ifname} (No IP) ",
-    "format-wifi": "   {essid} ({signalStrength}%)",
-    "on-click": "sh ~/scripts/rofi-wifi-menu/rofi-wifi-menu.sh",
-    "tooltip-format": "{ifname} via {gwaddr} "
+    "format-disconnected": "󱛅",
+    "format-ethernet": "{ipaddr}/{cidr} 󱚾",
+    "format-linked": "{ifname} (No IP) 󱚾",
+    "format-wifi": "󰖩",
+    "on-click": "alacritty -e nmtui",
+    "tooltip-format": "{essid}\n{ifname} via {gwaddr} "
   },
   "pulseaudio": {
     "format": "{icon}  {volume}%",
