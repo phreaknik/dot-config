@@ -24,6 +24,7 @@ export XDG_TEMPLATES_DIR="$HOME/Templates"
 export XDG_VIDEOS_DIR="$HOME/Videos"
 
 ## Application specific paths
+export HYPRSHOT_DIR="$XDG_PICTURES_DIR/Screenshots"
 export CARGO_HOME="$XDG_DATA_HOME/cargo"
 export GNUPGHOME="$XDG_DATA_HOME/gnupg"
 export GOMODCACHE="$XDG_CACHE_HOME/go/mod"
