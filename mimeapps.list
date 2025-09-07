@@ -1,0 +1,7 @@
+[Added Associations]
+image/jpeg=org.gnome.Loupe-3.desktop;
+video/x-ms-wmv=org.videolan.VLC-3.desktop;org.videolan.VLC-2.desktop;
+
+[Default Applications]
+image/jpeg=org.gnome.Loupe-3.desktop;
+video/x-ms-wmv=org.videolan.VLC-3.desktop;
