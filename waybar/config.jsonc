@@ -112,7 +112,7 @@
   //  "tooltip": true
   //},
   "custom/cpuhistory": {
-    "exec": "~/.config/waybar/scripts/cpu_history.py",
+    "exec": "~/.config/waybar/scripts/cpu_history.py -d 60",
     "format": "<span color='#FFA500'>  </span>{}",
     "interval": 6,
     "return-type": "json",
