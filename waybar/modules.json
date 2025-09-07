@@ -65,7 +65,7 @@
     "format": "{name}",
     "format-icons": {
       "active": "",
-      "default": "",
+      "default": "",
       "urgent": ""
     },
     "persistent-workspaces": {
