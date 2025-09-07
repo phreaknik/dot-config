@@ -12,6 +12,7 @@ return {
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.colorscheme.rose-pine" },
   { import = "astrocommunity.colorscheme.nightfox-nvim" },
+  { import = "astrocommunity.colorscheme.citruszest-nvim" },
 
   { import = "astrocommunity.markdown-and-latex.vimtex" },
 
