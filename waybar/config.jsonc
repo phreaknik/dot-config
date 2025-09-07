@@ -115,6 +115,8 @@
     "exec": "~/.config/waybar/scripts/cpu_history.py",
     "format": "<span color='#FFA500'>  </span>{}",
     "interval": 6,
+    "return-type": "json",
+    "on-click": "~/.config/waybar/scripts/cpu_history.py toggle"
   },
   "clock": {
     "interval": 1,
