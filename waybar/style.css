@@ -46,7 +46,6 @@ window#waybar {
 #network,
 #pulseaudio,
 #wireplumber,
-#custom-media,
 #tray,
 #mode,
 #idle_inhibitor,
@@ -68,7 +67,6 @@ window#waybar {
 #network:hover,
 #pulseaudio:hover,
 #wireplumber:hover,
-#custom-media:hover,
 #tray:hover,
 #mode:hover,
 #bluetooth:hover,
@@ -124,4 +122,22 @@ window#waybar {
 #custom-updates.updates-pending {
     color: #ffa500;
     animation: pulse 2s infinite;
+}
+
+/* Basic breathing effect using opacity */
+@keyframes breathe {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+#mpris.playing {
+    color: #ffa500;
+    animation: breathe 1.5s ease-in-out infinite;
 }

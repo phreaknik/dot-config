@@ -84,6 +84,15 @@
     "format": "  {}%",
     "tooltip": true
   },
+  "mpris": {
+	  "format": "{status_icon} {artist}",
+	  "format-paused": "{status_icon} {artist}",
+	  "status-icons": {
+		  "paused": "▶",
+		  "playing": "⏸"
+	  },
+	  // "ignored-players": ["firefox"]
+  },
   "network": {
     "format-disconnected": "Disconnected ⚠",
     "format-ethernet": "{ipaddr}/{cidr} ",

@@ -16,6 +16,7 @@
         "custom/cpuhistory",
         "memory",
         "temperature",
+        "mpris",
         "bluetooth",
         "network",
         "pulseaudio",
