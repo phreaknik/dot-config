@@ -9,7 +9,7 @@ return {
   ---@type AstroUIOpts
   opts = {
     -- change colorscheme
-    colorscheme = "citruszest",
+    colorscheme = "tokyodark",
 
     -- Icons can be configured throughout the interface
     icons = {
