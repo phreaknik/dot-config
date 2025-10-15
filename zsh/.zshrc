@@ -68,3 +68,4 @@ source $ZSH/oh-my-zsh.sh
 # Enable vi bindings
 bindkey -v
 alias htop='echo "use btm instead"'
+export COLORTERM=truecolor
